@@ -1,0 +1,26 @@
+    <h1>WEB SERVER NODE JS</h1>
+    <h3>Links</h3>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/about">about</a>
+        </li>
+        <li>
+            <a href="/contact">contact</a>
+        </li>
+    </ul>
+    <h2>Halo <%= nama %> </h2>
+
+    <h4>Daftar Mahasiswa</h4>
+<% if (mahasiswa.length < 1) { %>
+    <p>Data mahasiswa masih kosong</p>
+    <% } else { %>  
+    <% mahasiswa.forEach(mhs => { %>
+        <ul>
+            <li>Nama : <%= mhs.nama %> </li>
+            <li>Email : <%= mhs.email %> </li>
+            </ul>
+    <% }) %>  
+    <% } %> 
